@@ -1,7 +1,11 @@
 import type { ReactNode } from "react";
 
 type SuspenseRouteProps = {
-    element: ReactNode;
+  element: ReactNode;
 };
 
-export type { SuspenseRouteProps };
+type BooleanType = {
+  [key: string]: boolean;
+};
+
+export type { SuspenseRouteProps, BooleanType };
