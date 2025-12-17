@@ -4,6 +4,9 @@ $m: 900px;
 $l: 1200px;
 $xl: 1450px;
 $xxl:1600px;
+$primary-text-color: #ffffff;
+$secondary-text-color: #8c8673;
+
 
 @mixin responsive($screen) {
     @media only screen and (max-width: $screen) {
@@ -16,4 +19,26 @@ $xxl:1600px;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
+}
+
+.website-logo{
+    gap:8px;
+    color:$primary-text-color;
+    display: flex;
+    align-items: center;
+    .website-symbol{
+        width: 36px;
+        height: 36px;
+        align-items: center;
+        display: flex;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        justify-content: center;
+        background-image: linear-gradient(135deg, rgb(31, 173, 90) 0%, rgb(31, 147, 109) 100%)
+    }
+    .website-logo-text{
+        font-weight: 600;
+        font-size: 18px;
+    }
 }
