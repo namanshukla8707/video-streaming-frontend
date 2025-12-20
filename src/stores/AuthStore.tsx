@@ -3,18 +3,18 @@ import type { AuthStoreState } from "../types/AuthTypes";
 import { devtools } from "zustand/middleware";
 
 const AuthStore: StateCreator<AuthStoreState> = (set, _get) => ({
-  isAuthenticated: false,
+  isLoggedIn: false,
   user: null,
 
   login: (userData) =>
     set(() => ({
-      isAuthenticated: true,
+      isLoggedIn: true,
       user: userData,
     })),
 
   logout: () =>
     set(() => ({
-      isAuthenticated: false,
+      isLoggedIn: false,
       user: null,
     })),
 });

@@ -1,7 +1,8 @@
 export enum ButtonVariant {
   PRIMARY,
   SECONDARY,
-  ICONBUTTON,
+  ICON,
+  TEXT,
 }
 
 export interface CustomButtonType {
@@ -10,5 +11,16 @@ export interface CustomButtonType {
   onClick?: () => void;
   width?: string | number;
   height?: string | number;
+  style?: React.CSSProperties;
+}
+
+export interface CustomImageType {
+  imageUrl?: string;
+  altText?: string;
+  style?: React.CSSProperties;
+}
+
+export interface CustomTextType {
+  children: React.ReactNode;
   style?: React.CSSProperties;
 }

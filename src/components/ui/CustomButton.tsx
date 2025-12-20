@@ -1,14 +1,14 @@
 import { ButtonVariant, type CustomButtonType } from "@/types/UiTypes";
-import "@/styles/uiStyles/CustomButton.scss";
+import "@/styles/scssStyles/uiStyles/CustomButton.scss";
 
 const ButtonVariantClassMap: Record<ButtonVariant, string> = {
   [ButtonVariant.PRIMARY]: "primary",
   [ButtonVariant.SECONDARY]: "secondary",
-  [ButtonVariant.ICONBUTTON]: "icon-button",
+  [ButtonVariant.ICON]: "icon-button",
+  [ButtonVariant.TEXT]:"text-button"
 };
 
 const getButtonVariantByClassName = (variant: ButtonVariant) => {
-  console.log("custom-button " + ButtonVariantClassMap[variant]);
   return (
     "custom-button " + ButtonVariantClassMap[variant] ||
     ButtonVariantClassMap[ButtonVariant.PRIMARY]
