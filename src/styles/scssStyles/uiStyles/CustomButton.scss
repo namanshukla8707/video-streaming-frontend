@@ -1,4 +1,4 @@
-@use "../../main.scss" as *;
+@use "../../../main.scss" as *;
 
 .custom-button {
   color: $primary-text-color;
@@ -43,5 +43,18 @@
   transition: border 0.1s;
   &:hover {
     border: 1.5px solid rgb(31, 147, 109);
+  }
+}
+
+.text-button {
+  color: $secondary-text-color;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  &:hover {
+    color: $primary-text-color;;
   }
 }

@@ -1,14 +1,15 @@
 export interface User {
-  id: string;
+  id: number;
   username: string;
   email: string;
   role: string;
 }
 
 export interface AuthStoreState {
-  isAuthenticated: boolean;
+  isLoggedIn: boolean;
   user: User | null;
 
   login: (userData: User) => void;
   logout: () => void;
 }
+
