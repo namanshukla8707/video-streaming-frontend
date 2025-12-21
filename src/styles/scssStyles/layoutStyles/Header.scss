@@ -1,11 +1,12 @@
 @use "../../../main.scss" as *;
 
 .main-header-box{
-    background-image: linear-gradient(135deg, rgba(3, 28, 14, 0.951) 0%, rgba(2, 19, 13, 0.982) 100%);
+    background-color:$primary-bg-color;
     padding:12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #6ef1a551;
     .main-nav-ops-box{
         display: flex;
         align-items: center;

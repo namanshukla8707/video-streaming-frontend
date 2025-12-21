@@ -85,7 +85,7 @@ export const NavigationOptions = ({
       <CustomButton variant={ButtonVariant.ICON} width={"50px"} height={"40px"}>
         <CartIcon style={{ color: "#ffffff" }} />
       </CustomButton>
-      <ProfileSection user={user} />
+      {isLoggedIn && <ProfileSection user={user} />}
       <NavigationAuthButtons isLoggedIn={isLoggedIn} />
     </div>
   );
