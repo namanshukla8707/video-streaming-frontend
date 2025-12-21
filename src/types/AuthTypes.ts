@@ -13,3 +13,9 @@ export interface AuthStoreState {
   logout: () => void;
 }
 
+export interface AuthTileType {
+  heading: string;
+  description?: string;
+  svgIcon?: React.ReactNode;
+  iconDivStyle?: React.CSSProperties;
+}

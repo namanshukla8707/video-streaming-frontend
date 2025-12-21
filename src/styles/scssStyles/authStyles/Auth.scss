@@ -1,0 +1,28 @@
+@use "../../../main.scss" as *;
+
+.main-auth-box {
+  background: $primary-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 75px);
+  .auth-left-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .auth-tile-box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: #141414;
+      border: 1px solid #2e2e2e;
+      padding: 16px;
+      border-radius: 12px;
+    }
+    .main-auth-tile-box {
+      gap: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
