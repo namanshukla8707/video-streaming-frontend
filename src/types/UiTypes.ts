@@ -12,6 +12,7 @@ export interface CustomButtonType {
   width?: string | number;
   height?: string | number;
   style?: React.CSSProperties;
+  className?: string
 }
 
 export interface CustomImageType {

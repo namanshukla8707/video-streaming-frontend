@@ -11,12 +11,27 @@ export const AuthPageStyles = {
     borderRadius: "8px",
     padding: "5px 10px",
   } as React.CSSProperties,
-  authLeftBoxMainHeadingStyles: {
+  authLeftBoxMainHeadingStyle: {
     fontSize: "36px",
     fontWeight: 600,
   } as React.CSSProperties,
-  authLeftBoxMainDescriptionStyles: {
+  authLeftBoxMainDescriptionStyle: {
     fontSize: "20px",
+    fontWeight: 500,
+  } as React.CSSProperties,
+  authCardSignInBtnStyle: {
+    color: "var(--primary-green-color)",
+    width: "auto",
+    height: "auto",
+    fontSize: "14px",
+  } as React.CSSProperties,
+  authCardHeadingTextStyle: {
+    fontSize: "24px",
+    fontWeight: 600,
+  } as React.CSSProperties,
+  authCardSubHeadingTextStyle: {
+    color: "var(--secondary-text-color)",
+    fontSize: "14px",
     fontWeight: 500,
   } as React.CSSProperties,
 };
