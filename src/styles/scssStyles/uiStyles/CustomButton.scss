@@ -29,7 +29,7 @@
 
 .secondary {
   background: #000b026e;
-  border: 1px solid #504d43;
+  border: 1px solid $secondary-gray-color;
   transition: border 0.3s;
   &:hover {
     border: 2px solid rgb(31, 147, 109);
@@ -55,6 +55,13 @@
   cursor: pointer;
   transition: color 0.3s;
   &:hover {
-    color: $primary-text-color;;
+    color: $primary-text-color;
+  }
+}
+
+.secondary-btn-hover {
+  border: 2px solid $secondary-gray-color;
+  &:hover {
+    border: 2px solid $primary-green-color;
   }
 }

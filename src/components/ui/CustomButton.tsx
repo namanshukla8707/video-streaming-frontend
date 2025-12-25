@@ -12,6 +12,7 @@ const getButtonVariantByClassName = (
   variant: ButtonVariant,
   className: string
 ) => {
+  console.log(className," className");
   return (
     "custom-button " +
     (ButtonVariantClassMap[variant] ||
@@ -22,6 +23,7 @@ const getButtonVariantByClassName = (
 };
 
 export const CustomButton = ({
+  name,
   variant = ButtonVariant.PRIMARY,
   children,
   onClick,
@@ -32,13 +34,15 @@ export const CustomButton = ({
 }: CustomButtonType) => {
   return (
     <button
-      className={getButtonVariantByClassName(variant, className)}
+      type="button"
+      name={name}
       onClick={onClick}
       style={{
         width,
         height,
         ...style,
       }}
+      className={getButtonVariantByClassName(variant, className)}
     >
       {children}
     </button>

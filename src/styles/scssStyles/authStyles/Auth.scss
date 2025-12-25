@@ -56,5 +56,23 @@
         }
       }
     }
+    .main-auth-card-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .auth-card-form-main-input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .role-input-box {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          justify-content: space-between;
+        }
+      }
+    }
   }
 }

@@ -19,3 +19,8 @@ export interface AuthTileType {
   svgIcon?: React.ReactNode;
   iconDivStyle?: React.CSSProperties;
 }
+
+export enum UserType{
+  STUDENT,
+  TEACHER
+}

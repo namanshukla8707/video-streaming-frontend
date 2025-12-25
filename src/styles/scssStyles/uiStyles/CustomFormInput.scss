@@ -1,0 +1,7 @@
+@use "../../../main.scss" as *;
+
+.main-custom-form-input-box{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
