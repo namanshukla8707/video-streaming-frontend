@@ -42,12 +42,12 @@ export const AuthPageStyles = {
   authCardNotSelectedRoleButtonStyle: {
     backgroundColor: "var(--primary-gray-color)",
   } as CSSProperties,
-  authCardSelectedTeacherRoleButtonStyle: {
-    border: "2px solid var(--primary-green-color)",
-    backgroundColor: "#22c3650d",
-  } as CSSProperties,
-  studentRoleButtonTextStyle:{
+  selectedRoleButtonTextStyle:{
     color:"var(--primary-green-color)",
+    fontSize:"15px",
+    fontWeight:500
+  } as CSSProperties,
+  notSelectedRoleButtonTextStyle:{
     fontSize:"15px",
     fontWeight:500
   } as CSSProperties

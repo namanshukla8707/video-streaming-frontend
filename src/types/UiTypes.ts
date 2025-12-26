@@ -33,6 +33,7 @@ export interface CustomImageType {
 export interface CustomTextType {
   children: React.ReactNode;
   style?: React.CSSProperties;
+  className?:string
 }
 
 export interface CustomFormInputType {

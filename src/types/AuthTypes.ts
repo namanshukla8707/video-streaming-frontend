@@ -2,7 +2,7 @@ export interface User {
   id: number;
   username: string;
   email: string;
-  role: string;
+  role: UserType;
 }
 
 export interface AuthStoreState {
@@ -20,7 +20,19 @@ export interface AuthTileType {
   iconDivStyle?: React.CSSProperties;
 }
 
-export enum UserType{
-  STUDENT,
-  TEACHER
+export enum UserType {
+  STUDENT = "Student",
+  TEACHER = "Teacher",
+}
+
+export interface AuthMethodsType {
+  authFormData: AuthUser;
+  setAuthFormData: React.Dispatch<React.SetStateAction<any>>;
+}
+
+export interface AuthUser {
+  username?: string;
+  role?: UserType;
+  email?: string;
+  password: string;
 }

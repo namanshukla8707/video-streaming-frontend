@@ -1,4 +1,5 @@
 import { InputVariant, type CustomInputType } from "@/types/UiTypes";
+import "@/styles/scssStyles/uiStyles/CustomInput.scss";
 
 export const CustomInput = ({
   value,

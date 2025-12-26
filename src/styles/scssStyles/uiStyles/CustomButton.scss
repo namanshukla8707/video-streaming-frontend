@@ -61,7 +61,13 @@
 
 .secondary-btn-hover {
   border: 2px solid $secondary-gray-color;
+  .auth-form-role-not-selected-text {
+    color: #8c8673;
+  }
   &:hover {
+    .auth-form-role-not-selected-text {
+      color: var(--primary-green-color);
+    }
     border: 2px solid $primary-green-color;
   }
 }

@@ -1,3 +1,5 @@
+import { UserType } from "@/types/AuthTypes";
+
 export const AuthConstant = {
   AUTH_FORM_INPUT_LIST: (
     inputComponent_1: React.ReactNode,
@@ -21,5 +23,10 @@ export const AuthConstant = {
       label: "Password",
       inputComponent: inputComponent_4,
     },
+  ],
+
+  AUTH_FORM_ROLE_BUTTON_LIST: [
+    { role: UserType.STUDENT },
+    { role: UserType.TEACHER },
   ],
 };
