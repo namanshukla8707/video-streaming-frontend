@@ -12,7 +12,7 @@ export const CustomInput = ({
 }: CustomInputType) => {
   return (
     <div className="custom-input-box">
-      <div>{prefixIcon}</div>
+      {prefixIcon && <div className="prefix-icon">{prefixIcon}</div>}
       <input
         name={name}
         type={variant}
@@ -23,7 +23,7 @@ export const CustomInput = ({
           suffixIcon ? "has-suffix" : ""
         }`}
       />
-      <div>{suffixIcon}</div>
+      {suffixIcon && <div className="suffix-icon">{suffixIcon}</div>}
     </div>
   );
 };

@@ -12,7 +12,6 @@ const getButtonVariantByClassName = (
   variant: ButtonVariant,
   className: string
 ) => {
-  console.log(className," className");
   return (
     "custom-button " +
     (ButtonVariantClassMap[variant] ||

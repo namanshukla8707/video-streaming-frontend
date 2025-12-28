@@ -7,6 +7,7 @@ import { ButtonVariant } from "@/types/UiTypes";
 import { useState } from "react";
 import "@/styles/scssStyles/uiStyles/CustomButton.scss";
 import { getAuthMethods } from "./Auth.methods";
+import { useRegisterUser } from "@/queries/auth/register-user";
 
 const AuthForm = () => {
   const [authFormData, setAuthFormData] = useState({
@@ -19,7 +20,12 @@ const AuthForm = () => {
     authFormData,
     setAuthFormData,
   });
-  
+
+  const { mutate } = useRegisterUser();
+  const handleRegisterUser = () => {
+    mutate(authFormData);
+  };
+
   return (
     <form className="main-auth-card-form">
       {authFormInputComponentList.map((item, key) => (
@@ -28,7 +34,14 @@ const AuthForm = () => {
           {item.inputComponent}
         </div>
       ))}
-      <CustomButton>Create Account</CustomButton>
+      <CustomButton
+        className="auth-form-submit-btn"
+        onClick={() => {
+          handleRegisterUser();
+        }}
+      >
+        Create Account
+      </CustomButton>
     </form>
   );
 };

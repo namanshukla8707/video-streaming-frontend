@@ -1,8 +1,52 @@
 @use "../../../main.scss" as *;
 
-.custom-input-box{
-    .custom-input{
-        width:100%;
-        
+.custom-input-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .prefix-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .suffix-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-input {
+    width: 100%;
+    background-color: $primary-bg-color;
+    padding: 12px;
+    color: $primary-text-color;
+    border-radius: 12px;
+    border: 1px solid $secondary-gray-color;
+    &.has-prefix {
+      padding-left: 42px;
     }
+    &.has-suffix {
+      padding-right: 42px;
+    }
+    &::placeholder {
+      color: #8c8673;
+    }
+    &:focus {
+      color: $primary-text-color;
+      outline: none;
+      border: 2px solid $primary-green-color;
+    }
+  }
 }

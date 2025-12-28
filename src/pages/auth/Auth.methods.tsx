@@ -1,3 +1,6 @@
+import { EmailIcon } from "@/assets/icons/general/icon.email";
+import { LockIcon } from "@/assets/icons/general/icon.lock";
+import { UserIcon } from "@/assets/icons/general/icon.user";
 import { CustomButton } from "@/components/ui/CustomButton";
 import { CustomInput } from "@/components/ui/CustomInput";
 import { Text } from "@/components/ui/CustomText";
@@ -69,9 +72,10 @@ export const getAuthMethods = ({
     <CustomInput
       name="username"
       placeholder="Username"
+      prefixIcon={<UserIcon style={{ color: "#8c8673" }} />}
       value={authFormData.username}
-      handleChange={() => {
-        handleFormData;
+      handleChange={(e) => {
+        handleFormData(e);
       }}
     />
   );
@@ -80,10 +84,11 @@ export const getAuthMethods = ({
     <CustomInput
       placeholder="Email"
       name="email"
+      prefixIcon={<EmailIcon style={{ color: "#8c8673" }} />}
       variant={InputVariant.EMAIL}
       value={authFormData.email}
-      handleChange={() => {
-        handleFormData;
+      handleChange={(e) => {
+        handleFormData(e);
       }}
     />
   );
@@ -92,10 +97,11 @@ export const getAuthMethods = ({
     <CustomInput
       placeholder="Password"
       name="password"
+      prefixIcon={<LockIcon style={{ color: "#8c8673" }} />}
       variant={InputVariant.PASSWORD}
       value={authFormData.password}
-      handleChange={() => {
-        handleFormData;
+      handleChange={(e) => {
+        handleFormData(e);
       }}
     />
   );

@@ -21,8 +21,8 @@ export interface AuthTileType {
 }
 
 export enum UserType {
-  STUDENT = "Student",
-  TEACHER = "Teacher",
+  STUDENT = "USER",
+  TEACHER = "TEACHER",
 }
 
 export interface AuthMethodsType {
